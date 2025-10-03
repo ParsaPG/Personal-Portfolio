@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parsa Pourghasemi | Portfolio</title>
+  <meta name="description" content="Personal website of Parsa Pourghasemi — Computer Science student and Backend Developer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">Parsa Pourghasemi <small>— Backend Developer</small></div>
+      <button class="menu" aria-label="toggle menu" onclick="toggleMenu()">☰</button>
+      <div class="links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home / Hero -->
+  <header id="home">
+    <div class="container hero">
+      <div class="card">
+        <span class="tag">Hi! 👋 Welcome</span>
+        <h1 style="margin:8px 0 10px">Parsa Pourghasemi</h1>
+        <p class="muted">Computer Science student and Backend Developer focused on Python/Django and database design. Passionate about algorithms, data mining, and theory of computation.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn outline" href="#about">About Me</a>
+          <a class="btn" href="assets/Parsa-Pourghasemi-CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+      <div class="card" style="text-align:center">
+        <img src="assets/profile-placeholder.png" alt="Parsa" style="width:180px;height:180px;border-radius:50%;border:4px solid var(--ring);object-fit:cover;margin:10px auto 6px;display:block" />
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a Computer Science student with a strong interest in continuous learning. Currently working as a backend developer at an international freight forwarding company, focusing on maintaining systems, adding new features, and improving performance in collaboration with cross-functional teams. My goal is to solve real-world problems through good system design and data-driven solutions.</p>
+      <h3 style="margin-top:22px">Skills</h3>
+      <div class="skills" aria-label="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Django</span>
+        <span class="skill">REST API</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">Database Design</span>
+        <span class="skill">Git</span>
+        <span class="skill">Linux</span>
+        <span class="skill">OOP / OOD</span>
+        <span class="skill">Algorithms & Data Structures</span>
+        <span class="skill">Machine Learning (Basics)</span>
+        <span class="skill">Linear Algebra</span>
+      </div>
+      <h3 style="margin-top:24px">Education</h3>
+      <p class="muted">B.Sc. in Computer Science — Amirkabir University of Technology (2022/09 – Present)</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="t-item">
+          <div class="t-top">
+            <strong>Junior Backend Developer — Lian Visman (International Freight Forwarding)</strong>
+            <span class="chip">Tehran | 2025/03 – Present</span>
+          </div>
+          <ul>
+            <li>Maintaining and supporting backend services to ensure smooth operations.</li>
+            <li>Adding new features based on team and client needs.</li>
+            <li>Collaborating with team members to improve efficiency and fix bugs.</li>
+          </ul>
+        </article>
+        <article class="t-item">
+          <div class="t-top">
+            <strong>Teaching Assistant — Advanced Python Programming (Amirkabir University)</strong>
+            <span class="chip">Tehran | 2025/01 – 2025/05</span>
+          </div>
+          <ul>
+            <li>Assisted in preparing and delivering advanced Python topics with real-world applications.</li>
+            <li>Guided students with exercises, debugging, and problem solving.</li>
+          </ul>
+        </article>
+        <article class="t-item">
+          <div class="t-top">
+            <strong>Iranian National Olympiad in Informatics — Training</strong>
+            <span class="chip">Karaj | 2019/06 – 2021/05</span>
+          </div>
+          <ul>
+            <li>Studied algorithm design and problem solving with C++; focused on combinatorics and graph theory.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="proj">
+          <h3>Automated Data Extraction from Unstructured Documents</h3>
+          <p class="muted">Image processing pipeline with OCR and LLM integration to convert documents into structured Excel datasets.</p>
+          <ul>
+            <li>Image preprocessing to improve OCR accuracy</li>
+            <li>LLM-based parsing and field validation</li>
+            <li>Automatic Excel export</li>
+          </ul>
+        </article>
+        <article class="proj">
+          <h3>Internal Employee Data Management Platform</h3>
+          <p class="muted">Web-based system with secure authentication, RBAC, data validation, and performance reporting to streamline workflows.</p>
+          <ul>
+            <li>Database design and REST APIs</li>
+            <li>Admin dashboards and reporting tools</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <a href="mailto:parsa_pourghasemi@yahoo.com" title="Email">
+          <span>Email</span>
+          <strong>parsa_pourghasemi@yahoo.com</strong>
+        </a>
+        <a href="https://www.linkedin.com/in/parsa-pourghasemi-0978a0ab/" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <strong>Parsa Pourghsasemi</strong>
+        </a>
+        <a href="https://github.com/ParsaPG" target="_blank" rel="noopener">
+          <span>GitHub</span>
+          <strong>@ParsaPG</strong>
+        </a>
+      </div>
+      <p class="muted" style="margin-top:12px">Tehran, Iran — Born 2004/04/25</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Parsa Pourghasemi — Built with HTML, CSS, JS</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
